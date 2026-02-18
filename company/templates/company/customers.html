@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Company App{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid pt-5">
+    <h1>Customers</h1>
+    <p>Here you will see a list of customers from our database</p>
+    <p><a href="/company">Back</a></p>
+</div>
+
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.first_name}}</td>
+            <td>{{ customer.last_name}}</td>
+            <td>{{ customer.email}}</td>
+            <td>{{ customer.phone}}</td>
+            <td>{{ customer.address}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+{% endblock %}
+
