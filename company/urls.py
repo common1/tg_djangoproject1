@@ -3,5 +3,7 @@ from .import views
 
 urlpatterns = [
     path('company/', views.company, name='company'),
-    path('customers/', views.customers, name='customers')
+    path('customers/', views.customers, name='customers'),
+    path('customers/new/', views.customernew, name='new'),
+    
 ]

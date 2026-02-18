@@ -29,9 +29,9 @@ python manage.py startapp company
 
 ## 03 Read Data - Part 1
 
-```
 [https://www.youtube.com/watch?v=5LDaKgeuWSk&list=PLdb-TcK6Aqj3ZBCfuY8_jfjCyiEIJDyTK&index=3]
-```
 
-```bash
-```
+## 04 Create data
+
+[https://www.youtube.com/watch?v=wyx7e7mu0tg&list=PLdb-TcK6Aqj3ZBCfuY8_jfjCyiEIJDyTK&index=4]
+

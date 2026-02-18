@@ -14,3 +14,18 @@ def customers(request):
     context = {'customers': customers}
 
     return render(request, template, context)
+
+def customernew(request):
+    data = Customer()
+    
+    data.first_name = "John"
+    data.last_name = "Doe"
+    data.email = "john.doe@usn.com"
+    data.phone = "333333"
+    data.address = "Norway"
+    
+    data.save()
+    
+    message = "<h1>New Customer</h1><p>New Customer created successfully</p>"
+    
+    return HttpResponse(message)
